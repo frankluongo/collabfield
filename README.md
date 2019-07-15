@@ -12,6 +12,14 @@ This application comes from the [Collabfield Tutorial on FreeCodeCamp](https://w
 
 ## 01.3 Create a new app
 
+Commands:
+
+```bash
+rails new collabfield --database=postgresql
+
+rails s
+```
+
 ## 02 Layout
 
 [Section Link](https://www.freecodecamp.org/news/lets-create-an-intermediate-level-ruby-on-rails-application-d7c6e997c63f/#layout)
