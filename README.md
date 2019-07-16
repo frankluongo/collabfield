@@ -27,9 +27,22 @@ rails s
 ### 02.1 Home page
 
 - Hash symbol # in Ruby represents a method
--
 
 ### 02.2 Bootstrap
+
+To add gems to your appplication, go to the Gemfile and add the gems you want, like this:
+
+```gemfile
+...
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'sass-rails', '>= 3.2'
+```
+
+Save the file and run this to install newly added gems:
+
+```bash
+bundle install
+```
 
 ### 02.3 Navigation bar
 
