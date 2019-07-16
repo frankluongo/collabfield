@@ -26,6 +26,9 @@ rails s
 
 ### 02.1 Home page
 
+- Hash symbol # in Ruby represents a method
+-
+
 ### 02.2 Bootstrap
 
 ### 02.3 Navigation bar
