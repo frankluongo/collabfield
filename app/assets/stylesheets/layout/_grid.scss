@@ -1,0 +1,10 @@
+.grid-container {
+  display: flex;
+}
+
+// Grid Container Utilities
+
+.gc {
+  &-column { flex-direction: column; }
+  &-wrap { flex-wrap: wrap; }
+}
