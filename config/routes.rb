@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'pages#index'
+
   devise_for :users, :controllers => {:registrations => "registrations"}
 
   devise_scope :user do
@@ -6,6 +9,11 @@ Rails.application.routes.draw do
     get 'signup', to: 'devise/registrations#new'
   end
 
-  root to: 'pages#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :posts do
+    collection do
+      get 'hobby'
+      get 'study'
+      get 'team'
+    end
+  end
 end

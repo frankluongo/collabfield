@@ -82,13 +82,9 @@ rspec spec
 rspec spec/helpers/navigation_helper_spec.rb
 ```
 
-
-
 ### 03.4 Main feed
 
 https://www.freecodecamp.org/news/lets-create-an-intermediate-level-ruby-on-rails-application-d7c6e997c63f/#main-feed
-
-
 
 ### 03.5 Single post
 
