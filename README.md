@@ -58,7 +58,37 @@ bundle install
 
 ### 03.3 Testing
 
+#### What we're using
+
+- **Framework:** RSpec When I started testing my Rails apps, I used the default Minitestframework. Now I use RSpec. I don’t think there’s a good or a bad choice here. Both frameworks are great. I think it depends on a personal preference, which framework to use. I’ve heard that RSpec is a popular choice among Rails community, so I’ve decided to give it a shot. Now I am using it most of the time.
+- **Sample data**: factory_girl Again, at first I tried the default Rails way — fixtures, to add sample data. I’ve found that it’s a different case than it is with testing frameworks. Which testing framework to choose is probably a personal preference. In my opinion it’s not the case with sample data. At first fixtures were fine. But I’ve noticed that after apps become larger, controlling sample data with fixtures becomes tough. Maybe I used it in a wrong way. But with factories everything was nice and peaceful right away. No matter if an app is smaller or bigger — the effort to set sample data is the same.
+- **Acceptance tests:** Capybara By default Capybara uses rack_test driver. Unfortunately, this driver doesn’t support JavaScript. Instead of the default Capybara’s driver, I chose to use poltergeist. It supports JavaScript and in my case it was the easiest driver to set up.
+
+#### Generate Tests
+
+```bash
+rails generate rspec:install
+```
+
+#### Running Tests
+
+```bash
+rspec spec
+```
+
+#### Run a specific Test
+
+```bash
+rspec spec/helpers/navigation_helper_spec.rb
+```
+
+
+
 ### 03.4 Main feed
+
+https://www.freecodecamp.org/news/lets-create-an-intermediate-level-ruby-on-rails-application-d7c6e997c63f/#main-feed
+
+
 
 ### 03.5 Single post
 
