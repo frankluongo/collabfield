@@ -1,12 +1,22 @@
 .website-header {
-
+  background-color: #333333;
 }
 
 .website-header__content {
-
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 100px 1fr;
 }
 
 .website-navigation {
 
+}
+
+.website-navigation__list {
+  display: flex;
+}
+
+.website-navigation__link {
+  color: #fff;
 }
 
