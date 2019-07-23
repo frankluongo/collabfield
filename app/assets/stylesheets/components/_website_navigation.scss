@@ -1,4 +1,6 @@
 .website-header {
+  padding: 1rem 0;
+
   background-color: #333333;
 }
 
@@ -14,9 +16,20 @@
 
 .website-navigation__list {
   display: flex;
+  justify-content: flex-end;
+}
+
+.website-navigation__list > li {
+  margin-right: 1rem;
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .website-navigation__link {
   color: #fff;
 }
 
+.dropdown-menu-item {
+  width: 100%;
+}

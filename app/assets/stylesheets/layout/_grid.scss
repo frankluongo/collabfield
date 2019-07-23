@@ -1,5 +1,37 @@
-.grid-container {
+.grid-row {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+
+  & + & {
+    margin-top: 1rem;
+  }
+}
+
+.col {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@each $break, $value in $breakpoint-sizes {
+  @include breakpoint($break) {
+    @for $i from 1 through 12 {
+      .col-#{$break}-#{$i} {
+        @include flex-width(percentage($i/12))
+      }
+    }
+  }
+}
+
+@include breakpoint(xsmall only) {
+  .col-xsmall-12 {
+    margin-bottom: 1rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 // Grid Container Utilities

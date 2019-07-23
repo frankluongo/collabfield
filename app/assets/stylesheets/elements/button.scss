@@ -1,0 +1,11 @@
+button,
+.button {
+  padding: 1em 3em;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include appearance-reset;
+  border: 1px solid #ccc;
+}

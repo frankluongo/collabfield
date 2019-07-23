@@ -1,0 +1,25 @@
+input {
+  display: block;
+  width: 100%;
+  min-height: 2rem;
+  padding: 0.5rem;
+
+  font-size: 1rem;
+
+  label + & {
+    margin-top: 1rem;
+  }
+
+  &[type=checkbox] {
+    width: auto;
+
+    & + label {
+      padding-left: 0.5rem;
+    }
+  }
+
+  &[type=submit] {
+    display: inline-block;
+    width: auto;
+  }
+}

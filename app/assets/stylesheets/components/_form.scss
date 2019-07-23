@@ -1,0 +1,14 @@
+form {
+  padding: 1rem 0;
+}
+
+.form-section {
+  & + & {
+    padding-top: 2rem;
+  }
+}
+
+
+.fieldset-options {
+  justify-content: flex-start;
+}
